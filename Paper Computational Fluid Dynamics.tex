@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{nomencl}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -16,30 +18,40 @@
 
 \author{\IEEEauthorblockN{Gama Candra Tri Kartika}
 \IEEEauthorblockA{\textit{Departemen Ilmu Komputer dan Elektronika Instrumental} \\
-\textit{Universitas Gadjah Mada}\\
+\textit{Universitas Gadjah Mada}\\/Users/candra/Downloads/Conference-LaTeX-template_4-18 2/conference_041818.tex
 Yogyakarta, Indonesia \\
 candragctk17@gmail.com}
 }
 
 \maketitle
 
-\begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
-\end{abstract}
+\begin{Abstraksi}
+Paper yang akan di \textit{review} menjelaskan tentang metode numerik yang memanfaatkan \textit{Computational Fluid Dynamics} (CFD) yang digunakan untuk menjalankan interaksi struktur fluida dari perangkat ergi gelombang yang bertujuan untuk menghasilkan keluaran gelombang 3 dimensi. Metode saat ini menentukan gerakan pada pelampung dari aliran fluida. Keluaran energi dari perangkat dihitung untuk kondisi gelombang yang berbeda. Teknik ini diperluas untuk susunan dua pelampung untuk menentukan interferensi di antara keduanya.
+\end{Abstraksi}
 
-\begin{IEEEkeywords}
-component, formatting, style, styling, insert
-\end{IEEEkeywords}
+\begin{Keywords}
+Energi gelombang laut, Computational Fluid Dynamics
+\end{Keywords}
 
 \section{Pendahuluan}
 This document is a model and instructions for \LaTeX.
 Please observe the conference page limits. 
 
-\section{Ease of Use}
+\section{Metode Numerik}
 
 \subsection{Maintaining the Integrity of the Specifications}
+
+\makenomenclature
+ 
+\nomenclature{$+a$}{Operator}
+\nomenclature{$2a$}{Number}
+\nomenclature{$:a$}{Punctuation Symbol}
+\nomenclature{$Aa$}{Upper Case Letter}
+\nomenclature{$aa$}{Lower Case Letter}
+\nomenclature{$\alpha$}{Greek Character}
+ 
+\printnomenclature
+ 
 
 The IEEEtran class file is used to format your paper and style the text. All margins, 
 column widths, line spaces, and text fonts are prescribed; please do not 
